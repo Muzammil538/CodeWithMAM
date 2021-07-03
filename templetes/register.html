@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEACH | Register</title>
+    <!-- personal styles -->
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html">CoderWithMAM</a>
+    </nav>
+    <div class="wrapper">
+        <div class="title">
+          Registration Form
+        </div>
+        <div class="form">
+            <div class="inputfield">
+              <label>First Name</label>
+              <input type="text" class="input" id="FName" required>
+            </div>  
+            <div class="inputfield">
+              <label>Last Name</label>
+              <input type="text" class="input" id="LName" required>
+            </div>  
+            <div class="inputfield">
+              <label>Password</label>
+              <input type="password" class="input" id="Passwd" required>
+            </div>  
+            <div class="inputfield">
+              <label>Confirm Password</label>
+              <input type="password" class="input" id="confPasswd" required>
+            </div>
+            <div class="inputfield">
+                <h5 id="alertText"></h5>
+            </div>
+            <div class="inputfield terms">
+                <label class="check">
+                  <input type="checkbox" id="show">
+                  <span class="checkmark"></span>
+                </label>
+                <p>Show Password</p>
+             </div> 
+            <div class="inputfield">
+              <label>Gender</label>
+              <div class="custom_select">
+                <select>
+                  <option value="">Select</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+            </div> 
+            <div class="inputfield">
+              <label>Email Address</label>
+              <input type="text" class="input" id="EmailR" required>
+           </div> 
+          <div class="inputfield">
+              <label>Phone Number</label>
+              <input type="tel" class="input" id="Mobile" required>
+           </div> 
+          <div class="inputfield">
+              <label>Address</label>
+              <textarea class="textarea"></textarea>
+           </div> 
+          <div class="inputfield">
+              <label>Postal Code</label>
+              <input type="text" class="input" id="PostCode" required>
+           </div> 
+          <div class="inputfield terms">
+              <label class="check" >
+                <input type="checkbox" required>
+                <span class="checkmark"></span>
+              </label>
+              <p>Agreed to terms and conditions</p>
+           </div> 
+          <div class="inputfield">
+            <input type="submit" value="Register" class="btn">
+          </div>
+        </div>
+    </div>
+    <script src="../scripts/account.js"></script>
+    <!-- <script src="../scripts/login.js"></script> -->
+    <script src="../scripts/store.js"></script>
+</body>
+</html>
