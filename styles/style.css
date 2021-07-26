@@ -14,94 +14,13 @@ button{
     cursor: pointer;
 }
 /* Navbar */
-.navigation{
-    position: relative;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    display: flex;
-    padding: 15px;
-}
-.navigation a.page{
-    font-size: 20px;
-    border: 2px solid #4f4f4f;
-    padding: 5px;
-    color: #416bbf;
-    position: relative;
-}
-.navigation .links{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: auto;
-}
-/* .navigation .links.active a{
-    display: block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-} */
-.navigation .links a{
-    padding: 4px;
-    color: #418bbf;
-    border: 2px solid #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-.navigation .links a.acc{
-    border: 2px solid #fff;
-    border-radius: 10px;
-    background-color: #4150bf;
-    color: #fff;
-    padding: 3px;
-}
+
 
 /* Banner */
-.banner img{
-    width: 100%;
-    position: relative;
-    background: cover;
-}
-.banner h3{
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    color: #fff;
-    letter-spacing: 5px;
-    text-align: center;
-    font-size: 30px;
-}
+
 
 /* Why to us  */
-.srabout{
-    width: 100%;
-    position: relative;
-    padding: 33px;
-}
-.srabout h2{
-    text-align: center;
-    padding: 10px;
-}
-.srabout p{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-}
-.srabout button{
-    position: relative;
-    width: 160px;
-    padding: 5px;
-    display: block;
-    text-align: center;
-    background-color: #1195ed;
-    border-radius: 15px;
-    left: 45%;
-}
-.srabout button a{
-    color: #fff;
-    text-align: center;
-}
+
 
 /* visits */
 .visits{
@@ -116,50 +35,3 @@ button{
     font-size: 30px;
 }   
 /* Courses  */
-.courses{
-    position: relative;
-    padding: 22px;
-}
-.courses h2{
-    position: relative;
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-.courses .courseHead{
-    position: relative;
-    display: flex;
-}
-.courses .courseHead .course{
-    padding: 20px;
-    width: 40%;
-    position: relative;
-    display: block;
-    /* background-color: #3333; */
-}
-.courses .courseHead .course img{
-    width: 100px;
-    border-radius: 30px;
-    border: 1px solid #333;
-    padding: 10px;
-    margin: 0 auto;
-    display: block;
-}
-.courses .courseHead .course h3{
-    text-align: center;
-    padding: 10px;
-}
-.courses .courseHead .course span,
-.courses .courseHead .course button{
-    text-align: center;
-    display: block;
-}
-.courses .courseHead .course button{
-    margin: 0 auto;
-    padding: 5px 15px;
-    margin-top: 5px;
-    background-color: #1195ed;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 10px;;
-}
