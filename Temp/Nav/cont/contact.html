@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithMAM | Contact</title>
+
+    <!-- Personal Style -->
+    <link rel="stylesheet" href="./contact.css">
+    <!-- Font awesome Icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <a href="../../../index.html" class="logo">CodeWithMAM</a>
+        <span>
+            <i class="fas fa-moon" id="icon"></i>
+        </span>
+    </header>
+    <!-- Contact Form -->
+    <section class="container">
+        <h1 class="title">Contact Form</h1>
+        <div class="contact">
+            <div class="contactDetail">
+                <h2><i class="far fa-envelope"></i> Email :</h2>
+                <h4>mamuzammil884@gmail.com</h4>
+                <h2><i class="fas fa-phone-alt"></i> Phone :</h2>
+                <h4>+91 123456789</h4>
+                <div class="links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="contactForm">
+                <h2><i class="far fa-comments"></i> Send Feedback</h2>
+                <div class="formItem">
+                    <label for="Name"><i class="fas fa-user-alt"></i> Name </label>
+                    <br>
+                    <input type="email" name="Name" id="ContName">
+                </div>
+                <div class="formItem">
+                    <label for="Email"><i class="far fa-envelope"></i> Email </label>
+                    <br>
+                    <input type="email" name="Email" id="ContEmail">
+                </div>
+                <div class="formItem">
+                    <label for="Comment"><i class="fas fa-comment"></i> Comment </label>
+                    <br>
+                    <!-- <input type="text" name="Comment" id="Comment"> -->
+                    <textarea name="Comment" id="ContComment" ></textarea>
+                </div>
+                <button onclick="sendContMail()">Submit <i class="fas fa-share"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- Email JS  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_prcJgdlptbxwzDd6FwoJn");
+        })();
+    </script>
+    <!-- Personal JS -->
+    <script src="./contact.js"></script>
+</body>
+</html>

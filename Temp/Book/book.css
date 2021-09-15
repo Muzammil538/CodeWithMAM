@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+}
+:root {
+    --Blue: #0088a9;
+    --Black: #24252A;
+    --White: #edf0f1;
+    --secondary-Blue: rgba(0,136,169,1);
+}
+.theme {
+    --primary: #24252A;
+    --secondary: #edf0f1;
+}
+
+li , a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--secondary);
+    text-decoration: none;
+} 
+.container {
+    color: var(--secondary);
+    padding: 20px;
+}
+/* PC Nav  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+.logo {
+    cursor: pointer;
+    text-align: center;
+}
+#icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary);
+
+}
+.container .title {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--Blue);
+}
+.context {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #3333; */
+    margin-bottom: 10px;
+}
+.context img {
+    height: 220px;
+    width: 220px;
+    border-radius: 20%;
+    /* background-color: #333; */
+    margin-left: 50px;
+    box-shadow: 5px 5px #888888;
+}
+.context video {
+    border-left: 2px solid var(--Blue);
+    width: 500px;
+
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+.context_text {
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.context_text h1 , .context_text p {
+    margin: 5px 0px;
+}
+
+.contact {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+}
+.contactDetail {
+    display: block;
+    padding: 20px;
+}
+.contactDetail h2 , .contactDetail h4 {
+    margin: 5px 0px;
+}
+.contactForm {
+    padding: 15px;
+}
+.formItem {
+    margin: 10px auto;
+}
+
+.contactForm input , .formItem textarea{
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid var(--Blue);
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+.contactForm select {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid var(--Blue);
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+
+/* Mobile Design*/
+@media screen and (max-width: 768px) {
+    /* Navigation  */
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 10%;
+        text-align: center;
+    }
+    span #icon {
+        cursor: pointer;
+        font-size: 20px;
+        color: var(--secondary);
+        display: block;
+        position: absolute;
+    }
+    
+    /* Uni-Conatiner */
+    .container {
+        color: var(--secondary);
+        padding: 15px;
+    }
+    .container .title {
+        text-align: center;
+        padding: 2.5px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid var(--Blue);
+    }
+    button {
+        padding: 9px 25px;
+        background-color: rgba(0,136,169,1);
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+    /* Contact form  */
+    .contact {
+        display: block;
+        padding: 5px;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .contactDetail {
+        display: block;
+        padding: 5px;
+    }
+    .contactDetail h2 , .contactDetail h4 {
+        margin: 5px 0px;
+    }
+    .contactForm {
+        padding: 5px;
+        margin-top: 8px;
+    }
+    .formItem {
+        margin: 10px auto;
+    }
+    
+    .contactForm input , .formItem textarea {
+        border-radius: 10px;
+        font-size: 15px;
+        border: 1px solid var(--Blue);
+        margin-top: 5px;
+        padding: 5px 10px;
+        width: 100%;
+    }
+    .contactForm select {
+        width: 100%;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 1px solid var(--Blue);
+        margin-top: 5px;
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+
+}
+:root {
+    --Blue: #0088a9;
+    --Black: #24252A;
+    --White: #edf0f1;
+    --secondary-Blue: rgba(0,136,169,1);
+}
+.theme {
+    --primary: #24252A;
+    --secondary: #edf0f1;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+.logo {
+    cursor: pointer;
+    text-align: center;
+}
+#icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary);
+
+}
+li , a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--secondary);
+    text-decoration: none;
+} 
+.container {
+    color: var(--secondary);
+    padding: 20px;
+}
+.container .title {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--Blue);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+.links{
+    padding: 10px;
+    justify-content: space-around;
+}
+.links a i {
+    font-size: 25px;
+    margin: 0px 5px;
+    padding: 15px 2px;
+}
+.links a i:hover {
+    color: var(--Blue);
+    font-size: 30px;
+    transition-delay: 0.3s;
+}
+/* Contact Form */
+.contact {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-around;
+}
+.contactDetail {
+    display: block;
+    padding: 20px;
+}
+.contactDetail h2 , .contactDetail h4 {
+    margin: 5px 0px;
+}
+.contactForm {
+    padding: 20px;
+}
+.formItem {
+    margin: 10px auto;
+}
+
+.contactForm input , .formItem textarea {
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid var(--Blue);
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+/* Mobile Design*/
+@media screen and (max-width: 768px) {
+    /* Navigation  */
+    header {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 10%;
+        text-align: center;
+    }
+    button {
+        padding: 9px 25px;
+        background-color: rgba(0,136,169,1);
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+    .links{
+        padding: 5px;
+        justify-content: space-around;
+    }
+    .links a i {
+        font-size: 25px;
+        margin: 0px 5px;
+        padding: 15px 2px;
+    }
+    span #icon {
+        cursor: pointer;
+        font-size: 20px;
+        color: var(--secondary);
+        display: block;
+        position: absolute;
+        top: 1.5%;
+        right: 3%;
+    }
+
+    /* Uni-Conatiner */
+    .container {
+        color: var(--secondary);
+        padding: 15px;
+    }
+    /* Developer Context */
+    .container .title {
+        text-align: center;
+        padding: 2.5px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid var(--Blue);
+    }
+    .context {
+        display: block;
+        padding: 5px;
+        /* text-align: center; */
+        /* background-color: #3333; */
+    }
+    
+    /* Contact form  */
+    .contact {
+        display: block;
+        padding: 5px 10px;
+        justify-content: space-around;
+    }
+    .contactDetail {
+        display: block;
+        padding: 5px;
+    }
+    .contactDetail h2 , .contactDetail h4 {
+        margin: 5px 0px;
+    }
+    .contactForm {
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .formItem {
+        margin: 10px auto;
+    }
+    
+    .contactForm input , .formItem textarea {
+        border-radius: 10px;
+        font-size: 15px;
+        border: 1px solid var(--Blue);
+        margin-top: 5px;
+        padding: 5px 10px;
+    }
+}

@@ -1,0 +1,17 @@
+These are the Code words or code numbers for the Courses.
+
+#Names of the Courses
+1. HTML
+2. CSS 
+3. Javascript
+4. Python
+5. Django
+6. Web Design
+
+#Codes for the respective courses 
+1. HTML  = #HL064;
+2. CSS = #CS065;
+3. Javascript = #JS066;
+4. Python = #PY067;
+5. Django = #PD068;
+6. Web Design = #WD069;

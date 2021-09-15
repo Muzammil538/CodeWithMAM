@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+
+}
+:root {
+    --Blue: #0088a9;
+    --Black: #24252A;
+    --White: #edf0f1;
+    --secondary-Blue: rgba(0,136,169,1);
+}
+.theme {
+    --primary: #24252A;
+    --secondary: #edf0f1;
+}
+
+li , a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--secondary);
+    text-decoration: none;
+} 
+.container {
+    color: var(--secondary);
+    padding: 20px;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+#counter {
+    padding: 5px 15px;
+}
+/* PC Nav  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+.hamburger {
+    display: none;
+}
+.logo {
+    cursor: pointer;
+    text-align: center;
+}
+#boll {
+    background-color: #333;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    cursor: pointer;
+}
+#boll.hidden {
+    display: none;
+}
+#icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary);
+}
+.container .title {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--Blue);
+}
+.context {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    /* background-color: #3333; */
+}
+#eye{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    /* border: 5px dashed #333;  */
+    top: 250px;
+}
+.move {
+    left: 88%;
+}
+.down{
+    top: 80%;
+    left: 1%;
+}
+#msg{
+    color: green;
+    position: relative;
+    display: block;
+    text-align: center;
+    border: 3px solid #333;
+    display: none;
+}
+#errmsg{
+    color: red;
+    position: relative;
+    display: block;
+    text-align: center;
+    border: 3px solid #333;
+    display: none;
+}
+#counter.hide , #errmsg.hide{
+    display: none;
+}
+#msg.show , #errmsg.show{
+    display: block;
+    text-align: center;
+}
+
+/* Mobile Design*/
+@media screen and (max-width: 768px) {
+    /* Navigation  */
+    header {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 10%;
+        text-align: center;
+    }
+    span #icon {
+        cursor: pointer;
+        font-size: 20px;
+        color: var(--secondary);
+        display: block;
+        position: absolute;
+        top: 1.5%;
+        right: 3%;
+    }
+    .container {
+        color: var(--secondary);
+        padding: 15px;
+    }
+    .container .title {
+        text-align: center;
+        padding: 2.5px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid var(--Blue);
+    }
+    .context {
+        display: block;
+        padding: 5px;
+        /* text-align: center; */
+        /* background-color: #3333; */
+    }
+    #boll {
+        background-color: #333;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+    }
+    #eye{
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        left: 50%;
+        /* border: 5px dashed #333;  */
+        top: 250px;
+    }
+}
