@@ -132,6 +132,16 @@ button:hover {
 #code {
     color: var(--secondary-Blue);
 }
+
+input{
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid var(--Blue) !important;
+    margin-top: 5px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
 /* Mobile Design*/
 @media screen and (max-width: 768px) {
     /* Navigation  */
@@ -203,5 +213,13 @@ button:hover {
     .card {
         margin: 15px auto;
         width: 270px;
+    }
+    input {
+        border-radius: 10px;
+        font-size: 15px;
+        border: 1px solid var(--Blue);
+        margin-top: 5px;
+        padding: 5px 10px;
+        width: 100%;
     }
 }
