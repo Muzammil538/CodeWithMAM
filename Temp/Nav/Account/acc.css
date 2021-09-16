@@ -31,23 +31,7 @@ li , a, button {
     padding: 20px;
 }
 /* PC Nav  */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10%;
-}
-.hamburger {
-    display: none;
-}
-.logo {
-    cursor: pointer;
-    text-align: center;
-}
 
-.nav_links , .foot_links{
-    list-style: none;
-}
 .foot_links {
     margin: 15px 5px;
     display: inline-flex;
@@ -55,21 +39,6 @@ header {
 .foot {
     display: block;
     margin: 5px 25px;
-}
-.nav_links li {
-    display: inline-block;
-    padding: 0px 15px;
-}
-.foot_links li {
-    display: block;
-    padding: 5px 10px;
-}
-.nav_links li a {
-    transition: all 0.3s ease 0s;
- }
-
-.nav_links li a:hover , .foot_links li a:hover{
-    color: var(--Blue);
 }
 
 button {
@@ -84,29 +53,8 @@ button {
 button:hover {
     background-color: rgba(0,136,169,0.8);
 }
-#icon {
-    cursor: pointer;
-    font-size: 20px;
-    color: var(--secondary);
-}
-/* Banner PC */
-.banner {
-    font-family: 'Montserrat', sans-serif;
-    /* color: var(--secondary); */
-    padding: 50px;
-    text-align: center;
-    letter-spacing: 2px;
-}
-.banner h1,.banner h3{
-    margin: 5px 0px;
-}
-.banner h3 span::before {
-    content: '';
-    animation: TextChange infinite 8s;
-    color: var(--Blue);
-    text-transform: capitalize;
-    font-size: 20px;
-}
+
+
 
 
 /* Developer Context  */
@@ -116,7 +64,7 @@ button:hover {
     text-align: center;
     /* background-color: #3333; */
 }
-.container .title {
+.title {
     text-align: center;
     padding: 5px;
     margin-bottom: 5px;
@@ -140,20 +88,6 @@ button:hover {
     margin: 0px 50px;
     /* background-color: #333; */
     padding: 10px;
-}
-.links{
-    padding: 10px;
-    justify-content: space-around;
-}
-.links a i {
-    font-size: 25px;
-    margin: 0px 5px;
-    padding: 15px 2px;
-}
-.links a i:hover {
-    color: var(--Blue);
-    font-size: 30px;
-    transition-delay: 0.3s;
 }
 /* Courses  */
 .courses{
@@ -179,10 +113,33 @@ button:hover {
     height: 100px;
     width: 100px;
 }
-.course-long-btn {
+/* articles in left */
+.flexedbox {
+    display: flex;
+}
+.left {
     display: block;
-    /* margin-left: 45%; */ 
-    text-align: center;
+    /* background-color: #0066ff; */
+    margin-right: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+}
+.left button {
+    display: block;
+    padding: 10px 50px;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: initial;
+}
+.right {
+    display: block;
+    padding: 2px 8px;
 }
 /* Contact Form */
 .contact {
@@ -236,36 +193,6 @@ button:hover {
 /* Mobile Design*/
 @media screen and (max-width: 768px) {
     /* Navigation  */
-    header {
-        display: block;
-        justify-content: space-around;
-        align-items: center;
-        padding: 5px 10%;
-        text-align: center;
-    }
-    .nav_links {
-        list-style: none;
-        display: none;   
-    }
-    .foot_links {
-        display: initial;
-        margin: 0px auto;
-    }
-    .nav_links.active {
-        display: initial;
-        transition-delay: 0.9s;
-    }
-    .nav_links li {
-        display: block;
-        padding: 20px 0px;
-    }
-    .foot_links li {
-        display: block;
-        padding: 10px 0px;
-    }
-    .nav_links li a , .foot_links li a{
-       transition: all 0.3s ease 0s;
-    }
     .foot {
         display: flex;
         overflow-x: hidden;
@@ -310,7 +237,7 @@ button:hover {
         padding: 15px;
     }
     /* Developer Context */
-    .container .title {
+    .title {
         text-align: center;
         padding: 2.5px;
         margin-bottom: 5px;
@@ -359,32 +286,24 @@ button:hover {
         width: 270px;
 
     }
-    /* Contact form  */
-    .contact {
+    .flexedbox {
+        display: flex;
+    }
+    .left {
         display: block;
-        padding: 5px 10px;
-        justify-content: space-around;
+        /* background-color: #0066ff; */
+        margin-right: 20px;
+        position: sticky;
+        position: -webkit-sticky;
     }
-    .contactDetail {
+    .left button {
         display: block;
-        padding: 5px;
-    }
-    .contactDetail h2 , .contactDetail h4 {
-        margin: 5px 0px;
-    }
-    .contactForm {
-        padding: 5px;
-        margin-top: 10px;
-    }
-    .formItem {
-        margin: 10px auto;
+        padding: 5px 20px;
+        width: 100%;
+        max-width: 100px;
+        margin-bottom: 8px;
+        overflow-x: hidden;
+        text-align: center;
     }
     
-    .contactForm input , .formItem textarea {
-        border-radius: 10px;
-        font-size: 15px;
-        border: 1px solid var(--Blue);
-        margin-top: 5px;
-        padding: 5px 10px;
-    }
 }
