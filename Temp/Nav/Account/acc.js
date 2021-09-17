@@ -1,7 +1,16 @@
+    // // here we are changing the name 
+    // var Namespan = document.getElementById("name");
+    // var NameText = prompt("Enter Your Name");
+    // Namespan.innerText = NameText;
+    // localStorage.setItem("name", NameText);
+
+
+// these are those div's 
 const passChangeDiv = document.getElementById("passChange");
 const courEnDiv = document.getElementById("courEn");
 const courCompDiv = document.getElementById("courComp");
 const PersonalDiv = document.getElementById("personal");
+const RootDiv = document.getElementById("root");
 
 // these are the buttons
 const passBtn = document.getElementById("passBtn");
