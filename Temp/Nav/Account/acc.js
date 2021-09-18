@@ -1,10 +1,35 @@
-    // // here we are changing the name 
-    // var Namespan = document.getElementById("name");
-    // var NameText = prompt("Enter Your Name");
-    // Namespan.innerText = NameText;
-    // localStorage.setItem("name", NameText);
-
-
+// the edit button 
+const EditBtn = document.getElementById("edit");
+const toBlurDiv = document.getElementById("toblur");
+const inputAlert = document.getElementById("inputAlert");
+const inputAlertBtn = document.getElementById("inputAlertBtn");
+const NameBox = document.getElementById("name");
+const BioBox = document.getElementById("bio");
+EditBtn.addEventListener("click", ()=>{
+    toBlurDiv.classList.add("blur");
+    inputAlert.classList.remove("hide");
+    
+});
+inputAlertBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    const AccName = document.getElementById("AccName");
+    const AccBio = document.getElementById("AccBio");
+    var AccNameVal = AccName.value;
+    var AccBioVal = AccBio.value;
+    //console.log(AccNameVal);
+    //console.log(AccBioVal);
+    localStorage.setItem("Name" , AccNameVal);
+    localStorage.setItem("Bio" , AccBioVal);
+    
+    // console.log(localStorage);
+});
+NameBox.innerText = localStorage.getItem("Name");
+BioBox.innerText = localStorage.getItem("Bio");
+const closeBtn = document.getElementById("closeBtn");
+closeBtn.addEventListener("click", ()=>{
+    toBlurDiv.classList.remove("blur");
+    inputAlert.classList.add("hide");
+});
 // these are those div's 
 const passChangeDiv = document.getElementById("passChange");
 const courEnDiv = document.getElementById("courEn");

@@ -53,10 +53,26 @@ button {
 button:hover {
     background-color: rgba(0,136,169,0.8);
 }
-
-
-
-
+.blur {
+    opacity: 0.2;
+}
+.Contabs {
+    color: var(--primary);
+    padding: 20px;
+    position: absolute;
+    z-index: 100;
+    box-shadow: 10px 10px 10px 10px #3333;
+    transform: translate(100%,-330%);
+}
+.Contabs.hide {
+    display: none;
+}
+#edit{
+    margin-top: 10px;
+}
+#closeBtn {
+    cursor: pointer;
+}
 /* Developer Context  */
 .context {
     display: flex;
@@ -304,6 +320,14 @@ img {
         margin-bottom: 8px;
         overflow-x: hidden;
         text-align: center;
+    }
+    .Contabs {
+        color: var(--primary);
+        padding: 20px;
+        position: absolute;
+        z-index: 100;
+        box-shadow: 5px 5px 5px 5px #3333;
+        transform: translate(30%,-630%);
     }
     
 }

@@ -7,10 +7,13 @@
     <title>Account | CodeWithMAM</title>
     <!-- personal styles -->
     <link rel="stylesheet" href="./acc.css">
+    <!-- Font awesome Icons -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous" />
 </head>
 <body>
     <h1 class="title">Account</h1>
-    <section class="container flexedbox">
+    <section class="container flexedbox" id="toblur">
         
         <article class="left">
             <button id="personalBtn">Personal</button>
@@ -19,14 +22,16 @@
             <button id="passBtn">Password</button>
         </article>
         <article class="right">
-            <!-- <div class="context" id="root">
+            <div class="context" id="root">
                 <img src="../../../Images/deve-pic.png" alt="dp">
                 <div class="profile">
-                    <h2>Name : <span id="name"></span></h2>
+                    <h2>Name : <span id="name">none</span></h2>
                     <h3>Bio : </h3>
-                    <p id="bio">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure autem sequi sint unde asperiores rem corrupti laborum veritatis laudantium nulla.</p>    
+                    <p id="bio">none</p>
+                    <button id="edit">Edit</button>
+
                 </div>
-            </div> -->
+            </div>
             <div class="container" id="personal">
                 <h1 id="Head">Personal</h1>
                 <p id="rootText">
@@ -36,22 +41,41 @@
             <div class="container" id="courComp">
                 <h1 id="Head">Courses Completed</h1>
                 <p id="rootText">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla recusandae odio eius aliquam explicabo rem consequatur, vitae quasi voluptatem ratione dicta cumque impedit harum saepe, et obcaecati eum, perspiciatis velit vero ipsam eveniet. Ullam quidem rem suscipit amet facilis ipsa labore commodi nemo eligendi quas, velit officiis corrupti nobis? Error illo placeat quam assumenda facere molestiae at reiciendis eligendi magnam ipsa voluptatibus optio dolore harum quo dignissimos incidunt, sequi est ea velit provident, quaerat maiores possimus. Ullam architecto ad ipsum deleniti consequuntur, excepturi cupiditate, porro dolores corporis maxime provident. Culpa, dolor id? Accusamus odio architecto necessitatibus minus numquam, quis et?
+                    No Course Completed
                 </p>
             </div>
             <div class="container" id="courEn">
                 <h1 id="Head">Courses Enrolled</h1>
                 <p id="rootText">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla recusandae odio eius aliquam explicabo rem consequatur, vitae quasi voluptatem ratione dicta cumque impedit harum saepe, et obcaecati eum, perspiciatis velit vero ipsam eveniet. Ullam quidem rem suscipit amet facilis ipsa labore commodi nemo eligendi quas, velit officiis corrupti nobis? Error illo placeat quam assumenda facere molestiae at reiciendis eligendi magnam ipsa voluptatibus optio dolore harum quo dignissimos incidunt, sequi est ea velit provident, quaerat maiores possimus. Ullam architecto ad ipsum deleniti consequuntur, excepturi cupiditate, porro dolores corporis maxime provident. Culpa, dolor id? Accusamus odio architecto necessitatibus minus numquam, quis et?
+                    No Course Enrolled
                 </p>
             </div>
             <div class="container" id="passChange">
                 <h1 id="Head">Password Change</h1>
                 <p id="rootText">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla recusandae odio eius aliquam explicabo rem consequatur, vitae quasi voluptatem ratione dicta cumque impedit harum saepe, et obcaecati eum, perspiciatis velit vero ipsam eveniet. Ullam quidem rem suscipit amet facilis ipsa labore commodi nemo eligendi quas, velit officiis corrupti nobis? Error illo placeat quam assumenda facere molestiae at reiciendis eligendi magnam ipsa voluptatibus optio dolore harum quo dignissimos incidunt, sequi est ea velit provident, quaerat maiores possimus. Ullam architecto ad ipsum deleniti consequuntur, excepturi cupiditate, porro dolores corporis maxime provident. Culpa, dolor id? Accusamus odio architecto necessitatibus minus numquam, quis et?
+                    Not Available , Coming soon..
                 </p>
             </div>
         </article>
+    </section>
+
+    <!-- See the form -->
+    <section class="Contabs hide" id="inputAlert">
+        <i class="fas fa-times" id="closeBtn"></i>
+        <h2 class="title">Edit the Detail</h2>
+        <div class="contactForm">
+            <div class="formItem">
+                <label for="AccName"><i class="fas fa-user-alt"></i> Name </label>
+                <br>
+                <input type="text" name="AccName" id="AccName">
+            </div>
+            <div class="formItem">
+                <label for="AccBio"><i class="fas fa-comment"></i> Comment </label>
+                <br>
+                <textarea name="AccBio" id="AccBio" placeholder="Enter The Bio"></textarea>
+            </div>
+            <button id="inputAlertBtn">Submit <i class="fas fa-share"></i></button>
+        </div>
     </section>
 
     <!-- javascript -->
