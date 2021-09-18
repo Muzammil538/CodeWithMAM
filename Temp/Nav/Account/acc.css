@@ -125,9 +125,9 @@ img {
     width: 100px;
 }
 /* articles in left */
-.flexedbox {
+/* .flexedbox {
     display: flex;
-}
+} */
 .left {
     display: block;
     /* background-color: #0066ff; */
@@ -303,31 +303,33 @@ img {
 
     }
     .flexedbox {
-        display: flex;
+        display: block;
     }
     .left {
         display: flex;
         /* background-color: #0066ff; */
         margin-right: 20px;
-        position: sticky;
-        position: -webkit-sticky;
+        position: relative;
+        width: 100%;
+        overflow-x: scroll;
     }
     .left button {
         display: block;
         padding: 5px 20px;
-        width: 100%;
-        max-width: 100px;
-        margin-bottom: 8px;
-        overflow-x: hidden;
+        max-width: 200px;
+        margin-right: 8px;
         text-align: center;
     }
     .Contabs {
         color: var(--primary);
-        padding: 20px;
+        padding: 15px;
         position: absolute;
         z-index: 100;
         box-shadow: 5px 5px 5px 5px #3333;
-        transform: translate(30%,-630%);
+        transform: translate(1%,-300%);
+        display: block;
     }
-    
+    .hide{
+        display: none;
+    }
 }

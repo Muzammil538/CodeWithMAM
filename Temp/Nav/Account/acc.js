@@ -8,21 +8,21 @@ const BioBox = document.getElementById("bio");
 EditBtn.addEventListener("click", ()=>{
     toBlurDiv.classList.add("blur");
     inputAlert.classList.remove("hide");
-    
+    inputAlertBtn.addEventListener("click", (e)=>{
+        // e.preventDefault();
+        const AccName = document.getElementById("AccName");
+        const AccBio = document.getElementById("AccBio");
+        var AccNameVal = AccName.value;
+        var AccBioVal = AccBio.value;
+        //console.log(AccNameVal);
+        //console.log(AccBioVal);
+        localStorage.setItem("Name" , AccNameVal);
+        localStorage.setItem("Bio" , AccBioVal);
+        
+        // console.log(localStorage);
+    });
 });
-inputAlertBtn.addEventListener("click", (e)=>{
-    // e.preventDefault();
-    const AccName = document.getElementById("AccName");
-    const AccBio = document.getElementById("AccBio");
-    var AccNameVal = AccName.value;
-    var AccBioVal = AccBio.value;
-    //console.log(AccNameVal);
-    //console.log(AccBioVal);
-    localStorage.setItem("Name" , AccNameVal);
-    localStorage.setItem("Bio" , AccBioVal);
-    
-    // console.log(localStorage);
-});
+
 NameBox.innerText = localStorage.getItem("Name");
 BioBox.innerText = localStorage.getItem("Bio");
 const closeBtn = document.getElementById("closeBtn");
