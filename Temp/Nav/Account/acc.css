@@ -125,9 +125,9 @@ img {
     width: 100px;
 }
 /* articles in left */
-/* .flexedbox {
+.flexedbox {
     display: flex;
-} */
+}
 .left {
     display: block;
     /* background-color: #0066ff; */
