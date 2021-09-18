@@ -132,8 +132,7 @@ img {
     display: block;
     /* background-color: #0066ff; */
     margin-right: 20px;
-    position: sticky;
-    position: -webkit-sticky;
+    
 }
 .left button {
     display: block;
