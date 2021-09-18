@@ -57,15 +57,15 @@ button:hover {
     opacity: 0.2;
 }
 .Contabs {
-    color: var(--primary);
+    color: var(--secondary);
     padding: 20px;
     position: absolute;
     z-index: 100;
     box-shadow: 10px 10px 10px 10px #3333;
     transform: translate(100%,-330%);
 }
-.Contabs.hide {
-    display: none;
+#toblur {
+    z-index: 1;
 }
 #edit{
     margin-top: 10px;
@@ -306,7 +306,7 @@ img {
         display: flex;
     }
     .left {
-        display: block;
+        display: flex;
         /* background-color: #0066ff; */
         margin-right: 20px;
         position: sticky;

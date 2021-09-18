@@ -11,7 +11,7 @@ EditBtn.addEventListener("click", ()=>{
     
 });
 inputAlertBtn.addEventListener("click", (e)=>{
-    e.preventDefault();
+    // e.preventDefault();
     const AccName = document.getElementById("AccName");
     const AccBio = document.getElementById("AccBio");
     var AccNameVal = AccName.value;
