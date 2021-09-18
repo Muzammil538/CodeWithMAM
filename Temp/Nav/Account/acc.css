@@ -55,6 +55,7 @@ button:hover {
 }
 .blur {
     opacity: 0.2;
+    z-index: 0.2;
 }
 .Contabs {
     color: var(--secondary);
