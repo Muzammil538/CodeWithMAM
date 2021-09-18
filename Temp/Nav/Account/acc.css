@@ -64,9 +64,7 @@ button:hover {
     box-shadow: 10px 10px 10px 10px #3333;
     transform: translate(100%,-330%);
 }
-#toblur {
-    z-index: 1;
-}
+
 #edit{
     margin-top: 10px;
 }
@@ -325,7 +323,7 @@ img {
         position: absolute;
         z-index: 100;
         box-shadow: 5px 5px 5px 5px #3333;
-        transform: translate(1%,-330%);
+        transform: translate(1%,-350%);
         display: block;
     }
     .hide{
