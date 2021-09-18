@@ -55,19 +55,23 @@ button:hover {
 }
 .blur {
     opacity: 0.2;
-    z-index: 0.2;
+   
 }
 .Contabs {
-    color: var(--secondary);
+    color: var(--primary);
     padding: 20px;
     position: absolute;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: 10px 10px 10px 10px #3333;
-    transform: translate(100%,-330%);
+    transform: translate(100%,-180%);
+    display: block;
 }
-
+.Contabs.hide{
+    display: none;
+}
 #edit{
     margin-top: 10px;
+    cursor: pointer;
 }
 #closeBtn {
     cursor: pointer;

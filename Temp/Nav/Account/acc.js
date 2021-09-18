@@ -8,7 +8,7 @@ const BioBox = document.getElementById("bio");
 EditBtn.addEventListener("click", ()=>{
     toBlurDiv.classList.add("blur");
     inputAlert.classList.remove("hide");
-    inputAlertBtn.addEventListener("click", (e)=>{
+    inputAlertBtn.addEventListener("click", ()=>{
         // e.preventDefault();
         const AccName = document.getElementById("AccName");
         const AccBio = document.getElementById("AccBio");
