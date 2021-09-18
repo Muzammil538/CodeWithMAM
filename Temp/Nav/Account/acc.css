@@ -326,7 +326,7 @@ img {
         position: absolute;
         z-index: 100;
         box-shadow: 5px 5px 5px 5px #3333;
-        transform: translate(1%,-300%);
+        transform: translate(1%,-330%);
         display: block;
     }
     .hide{
