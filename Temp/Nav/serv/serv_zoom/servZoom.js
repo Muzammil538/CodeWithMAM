@@ -1,5 +1,5 @@
 const input = document.getElementById("searchInput");
-const Btn = document.querySelector("button");
+const Btn = document.getElementById("btn");
 const msg  = document.getElementById("result");
 
 // Change the Theme 
@@ -16,9 +16,13 @@ Icon.addEventListener("click", () => {
 });
 
 Btn.addEventListener("click", ()=>{
-    var inputVal = input.ariaValueMax.trim();
-    if(inputVal != ""){
-        window.location.href = inputVal;
+    var inputVal = input.value.trim();
+    // " || " is " or " 
+    if(inputVal == "google" || inputVal ==  "google.com"){
+        window.location.href = "https://www.google.com/";
+    }
+    else if (inputVal == "myzoom"){
+        window.location.href = "https://us02web.zoom.us/j/81656685183?pwd=MC9ETUxjeHNxK2lSWUJkTU43OFFnZz09";        
     }
     else{
         msg.innerText = "Sorry not found";
