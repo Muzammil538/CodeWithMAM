@@ -17,11 +17,9 @@ function sendMail(params){
         from_name : document.getElementById("fromname").value,
         from_email : document.getElementById("fromEmail").value,
         message : document.getElementById("course_name").value,
-        freenum : document.getElementById('freenum').value,
-        which = document.getElementById('which').value
     };
 
     emailjs.send("service_o2a2gvj","template_7xqc2aq",tempParams);
-    alert("Succesfully"+ message + "booked");
+    alert("Succesfully booked");
     window.location.href = "/";
 }
