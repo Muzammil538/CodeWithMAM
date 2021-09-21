@@ -102,7 +102,7 @@ button:hover {
 }
 .banner h3 span::before {
     content: '';
-    animation: TextChange infinite 8s;
+    animation: TextChange infinite 15s;
     color: var(--Blue);
     text-transform: capitalize;
     font-size: 20px;
