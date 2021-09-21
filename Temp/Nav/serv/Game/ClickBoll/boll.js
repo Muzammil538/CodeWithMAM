@@ -12,7 +12,7 @@ const countBtn = document.getElementById("countStart");
 var userName = prompt("Please Enter Your Name : ");
 
 countBtn.addEventListener("click", ()=>{
-    var ct = setInterval(countDown, 50);
+    var ct = setInterval(countDown, 500);
     countDown();
     Boll.addEventListener("mouseover", ()=>{
         Boll.classList.toggle("move");
