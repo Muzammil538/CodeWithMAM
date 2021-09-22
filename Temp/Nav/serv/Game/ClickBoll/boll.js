@@ -14,6 +14,7 @@ var userName = prompt("Please Enter Your Name : ");
 countBtn.addEventListener("click", ()=>{
     var ct = setInterval(countDown, 500);
     countDown();
+    countBtn.disabled = true;
     Boll.addEventListener("mouseover", ()=>{
         Boll.classList.toggle("move");
     });
