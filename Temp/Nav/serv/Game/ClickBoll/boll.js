@@ -35,6 +35,7 @@ function countDown (){
     const minutes = Math.floor(time / 60);
     let seconds = time % 60;
     Counter.innerText = `${minutes} : ${seconds}`;
+    countBtn.removeEventListener("click");
     if(time > 0){
         time--;
         // console.log("hello")
