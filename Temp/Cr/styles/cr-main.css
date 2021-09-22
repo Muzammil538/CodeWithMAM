@@ -14,6 +14,7 @@
     --Black: #24252A;
     --White: #edf0f1;
     --secondary-Blue: rgba(0,136,169,1);
+    --success-green: #4aff7a;
 }
 .theme {
     --primary: #24252A;
@@ -130,7 +131,12 @@ button:hover {
     text-align: center;
 }
 #code {
-    color: var(--secondary-Blue);
+    color: var(--success-green);
+    opacity: 0;
+}
+#code.pop {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
 }
 #copyText {
     padding: 5px 5px;
@@ -149,31 +155,7 @@ button:hover {
     border-radius: 15px;
     cursor: pointer;
 }
-#btn::before {
-    content:"copied";
-    position: absolute;
-    top: -45px;
-    right: 0px;
-    background: #5c81dc;
-    padding: 8px 10px;
-    border-radius: 20px;
-    display: none;
-}
-#btn::after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    right: 25px;
-    width: 10px;
-    height: 10px;
-    background: #5c81dc;
-    transform: rotate(45deg);
-    display: none;
-}
-  
-#btn.show::before,#btn.show::after {
-    display: block;
-}
+
 /* Mobile Design*/
 @media screen and (max-width: 768px) {
     /* Navigation  */

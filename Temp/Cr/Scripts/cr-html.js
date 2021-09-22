@@ -14,12 +14,13 @@ Icon.addEventListener("click", () => {
 
 const Btn = document.getElementById("btn");
 const text = document.getElementById("copyText");
+const Code = document.getElementById("code");
 Btn.addEventListener("click", ()=>{
     copyText.select();
     document.execCommand("copy");
-    Btn.classList.add("show");
+    Code.classList.add("pop");
     window.getSelection().removeAllRanges();
     setTimeout(function(){
-        Btn.classList.remove("show");
-    }, 2000);
+        Code.classList.remove("pop");
+    }, 2500);
 });
