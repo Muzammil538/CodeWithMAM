@@ -59,6 +59,12 @@ header {
     cursor: pointer;
     text-align: center;
 }
+.logo span:nth-child(1){
+    color: red;
+}
+.logo span:nth-child(3){
+    color: #0066ff;
+}
 #boll {
     background-color: #333;
     border-radius: 50%;

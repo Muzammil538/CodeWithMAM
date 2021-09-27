@@ -44,6 +44,12 @@ header {
     cursor: pointer;
     text-align: center;
 }
+.logo span:nth-child(1){
+    color: red;
+}
+.logo span:nth-child(3){
+    color: #0066ff;
+}
 
 .nav_links , .foot_links{
     list-style: none;
