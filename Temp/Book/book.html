@@ -44,7 +44,7 @@
                         <br>
                         <input type="text" name="course_name" id="course_name" placeholder="Course Code">
                     </div>
-                    <button onclick="sendMail()">Submit <i class="fas fa-share"></i></button>
+                    <button id="submitEmail">Submit <i class="fas fa-share"></i></button>
                 </div>
             </div>
         </section>
@@ -55,5 +55,10 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Email JS  -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_prcJgdlptbxwzDd6FwoJn");
+        })();
+    </script>
 </body>
 </html>

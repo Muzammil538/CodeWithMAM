@@ -10,9 +10,13 @@ Icon.addEventListener("click", () => {
         Icon.classList.add("fa-moon");
     }
 });
-(function() {
-    emailjs.init("user_prcJgdlptbxwzDd6FwoJn");
-})();
+// import{ init } from 'emailjs-com';
+// init("user_prcJgdlptbxwzDd6FwoJn");
+
+
+const btnSubmitEmail = document.getElementById("submitEmail");
+
+btnSubmitEmail.addEventListener("click", sendMail)
 // Email JS 
 function sendMail(params){
     var tempParams = {
@@ -23,6 +27,11 @@ function sendMail(params){
 
     emailjs.send("service_o2a2gvj","template_7xqc2aq",tempParams);
     //alert("Succesfully booked");
-    swal("Good job!", "You Have Bought the Course", "success");
-    window.location.href = "/";
+    //swal("Good job!", "You Have Bought the Course", "success");
+    swal("Good job!", "You Have Bought the Course", "success")
+    .then((value) => {
+        window.location.href = "/";
+    });
+    console.log("Hello");
+    //window.location.href = "/";
 }
