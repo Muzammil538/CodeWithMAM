@@ -103,7 +103,7 @@ button:hover {
     text-align: center;
     letter-spacing: 2px;
 }
-.context_text h1 , .context_text p {
+.context_text h1 {
     margin: 5px 0px;
 }
 .lang > p {
