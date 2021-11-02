@@ -106,7 +106,9 @@ button:hover {
 .context_text h1 , .context_text p {
     margin: 5px 0px;
 }
-
+.lang > p {
+    margin-bottom: 5px;
+}
 .courses{
     display: flex;
     justify-content: space-around;
@@ -161,9 +163,7 @@ button:hover {
     border-radius: 15px;
     cursor: pointer;
 }
-.lang span{
-    margin-bottom: 10px;
-}
+
 /* Mobile Design*/
 @media screen and (max-width: 768px) {
     /* Navigation  */
