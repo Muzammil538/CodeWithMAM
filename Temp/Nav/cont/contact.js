@@ -22,4 +22,5 @@ function sendContMail(params){
     emailjs.send("service_58gqnsl","template_zxidjj4",tempParams);
 
     window.location.href = "./contact.html";
+    alert ("Sent the Details.")
 }
