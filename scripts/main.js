@@ -23,7 +23,8 @@ Icon.addEventListener("click", () => {
         Icon.classList.add("fa-moon");
     }
 });
-
+const ContBtn = document.getElementById("ContBtn");
+ContBtn.addEventListener("click", sendContMail);
 // Email JS 
 function sendContMail(params){
     var tempParams = {
