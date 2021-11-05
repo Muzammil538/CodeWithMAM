@@ -374,7 +374,11 @@ button:hover {
     .contact {
         display: block;
         padding: 5px 10px;
-        justify-content: space-around;
+        /* text-align: center; */
+    }
+    .contact img {
+        margin: 0px auto;
+        text-align: center;
     }
     .contactDetail {
         display: block;
