@@ -196,6 +196,11 @@ button:hover {
     padding: 10px 20px;
     justify-content: space-around;
 }
+.contact img {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
 .contactDetail {
     display: block;
     padding: 20px;
