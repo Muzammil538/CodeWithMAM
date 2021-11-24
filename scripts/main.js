@@ -23,17 +23,4 @@ Icon.addEventListener("click", () => {
         Icon.classList.add("fa-moon");
     }
 });
-// const ContBtn = document.getElementById("ContBtn");
-// ContBtn.addEventListener("click", sendContMail);
-// Email JS 
-// function sendContMail(params){
-//     var tempParams = {
-//         from_name : document.getElementById("ContName").value,
-//         from_email : document.getElementById("ContEmail").value,
-//         message : document.getElementById("ContComment").value,
-//     };
 
-//     emailjs.send("service_58gqnsl","template_zxidjj4",tempParams);
-
-//     window.location.href = "./contact.html";
-// }

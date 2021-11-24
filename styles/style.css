@@ -351,6 +351,7 @@ button:hover {
     .links{
         padding: 5px;
         justify-content: space-around;
+        text-align: center;
     }
     .links a i {
         font-size: 25px;
@@ -360,21 +361,22 @@ button:hover {
     /* Courses */
     .courses {
         display: block;
-        justify-content: center;
-        padding: 10px 20px;
-        align-items: center;
+        margin: 0px auto;
+        padding: 10px;
         text-align: center;
     }
     .card {
         margin: 15px auto;
         width: 270px;
-
+    }
+    .card .card-btn{
+        margin-top: 5px;
     }
     /* Contact form  */
     .contact {
         display: block;
         padding: 5px 10px;
-        /* text-align: center; */
+        text-align: center;
     }
     .contact img {
         margin: 0px auto;
@@ -383,6 +385,7 @@ button:hover {
     .contactDetail {
         display: block;
         padding: 5px;
+        text-align: left;
     }
     .contactDetail h2 , .contactDetail h4 {
         margin: 5px 0px;
