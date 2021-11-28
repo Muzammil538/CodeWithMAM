@@ -140,7 +140,7 @@ button:hover {
     height: 150px;
     width: 150px;
     border-radius: 0;
-    transition-delay: 0.7s;
+    transition-delay: 0.3s;
 }
 .profile {
     margin: 0px 50px;
