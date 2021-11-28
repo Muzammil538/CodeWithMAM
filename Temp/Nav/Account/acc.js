@@ -5,6 +5,7 @@ const inputAlert = document.getElementById("inputAlert");
 const inputAlertBtn = document.getElementById("inputAlertBtn");
 const NameBox = document.getElementById("name");
 const BioBox = document.getElementById("bio");
+const rootTextBio = document.getElementById("rootTextBio");
 EditBtn.addEventListener("click", ()=>{
     toBlurDiv.classList.add("blur");
     inputAlert.classList.remove("hide");
@@ -25,6 +26,7 @@ EditBtn.addEventListener("click", ()=>{
 
 NameBox.innerText = localStorage.getItem("Name");
 BioBox.innerText = localStorage.getItem("Bio");
+rootTextBio.innerText = localStorage.getItem("Bio");
 const closeBtn = document.getElementById("closeBtn");
 closeBtn.addEventListener("click", ()=>{
     toBlurDiv.classList.remove("blur");
