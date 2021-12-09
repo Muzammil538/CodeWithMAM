@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+
+}
+:root {
+    --Blue: #0088a9;
+    --Black: #24252A;
+    --White: #edf0f1;
+    --secondary-Blue: rgba(0,136,169,1);
+}
+.theme {
+    --primary: #24252A;
+    --secondary: #edf0f1;
+}
+
+li , a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--secondary);
+    text-decoration: none;
+} 
+.container {
+    color: var(--secondary);
+    padding: 20px;
+}
+/* PC Nav  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+.logo {
+    cursor: pointer;
+    text-align: center;
+}
+.logo span:nth-child(1){
+    color: red;
+}
+.logo span:nth-child(3){
+    color: #0066ff;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+#icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+/* Developer Context  */
+.container .title {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--Blue);
+}
+
+.links{
+    padding: 10px;
+    justify-content: space-around;
+}
+.links a i {
+    font-size: 25px;
+    margin: 0px 5px;
+    padding: 15px 2px;
+}
+.links a i:hover {
+    color: var(--Blue);
+    font-size: 30px;
+    transition-delay: 0.3s;
+}
+/* Courses  */
+.courses{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+}
+
+.card {
+    text-align: center;
+    border: 0.5px solid var(--secondary-Blue);
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 220px;
+}
+.card-btn {
+    position: relative;
+    margin-top: 15px;
+}
+
+.course-img{
+    height: 100px;
+    width: 100px;
+}
+
+/* Mobile Design*/
+@media screen and (max-width: 768px) {
+    /* Navigation  */
+    header {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 10%;
+        text-align: center;
+    }
+    button {
+        padding: 9px 25px;
+        background-color: rgba(0,136,169,1);
+        border: none;
+        border-radius: 50px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+    span #icon {
+        cursor: pointer;
+        font-size: 20px;
+        color: var(--secondary);
+        display: block;
+        position: absolute;
+        top: 1.5%;
+        right: 3%;
+    }
+    /* Uni-Conatiner */
+    .container {
+        color: var(--secondary);
+        padding: 15px;
+    }
+    /* Developer Context */
+    .container .title {
+        text-align: center;
+        padding: 2.5px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid var(--Blue);
+    }
+    .context {
+        display: block;
+        padding: 5px;
+        /* text-align: center; */
+        /* background-color: #3333; */
+    }
+    .context img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        /* background-color: #333; */
+        margin: 0px auto;
+        box-shadow: 5px 5px #888888;
+        position: relative;
+        justify-content: center;
+    }
+    .links{
+        padding: 5px;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .links a i {
+        font-size: 25px;
+        margin: 0px 5px;
+        padding: 15px 2px;
+    }
+    /* Courses */
+    .courses {
+        display: block;
+        margin: 0px auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .card {
+        margin: 15px auto;
+        width: 270px;
+    }
+    .card .card-btn{
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-y: hidden;
+    overflow-x: unset;
+}
+.editor {
+    padding: 5px 30px;
+    position: relative;
+}
+textarea {
+    resize: none;
+    overflow-y: scroll;
+    height: 250px;
+    width: 310px;
+    margin-right: 5px;
+    scrollbar-color: #fff;
+}
+iframe {
+    height: 50%;
+    position: absolute;
+    width: 98%;
+    border: 1px solid #333;
+    margin: 2px 10px;
+}
+.out p {
+    text-align: center;
+    background-color: #f0f0f0;
+}
