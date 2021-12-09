@@ -21,7 +21,7 @@ textarea {
     width: 310px;
     margin-bottom: 8px;
     scrollbar-color: #fff;
-    border: 1px solid #333;
+    border: 0.5px solid #333;
     border-radius: 5px;
     display: block;
 }
