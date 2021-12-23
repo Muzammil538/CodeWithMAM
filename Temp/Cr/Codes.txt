@@ -15,3 +15,5 @@ These are the Code words or code numbers for the Courses.
 4. Python = #PY067;
 5. Django = #PD068;
 6. Web Design = #WD069;
+
+https://forms.gle/RbW5dpKkUYhoNaLX8
