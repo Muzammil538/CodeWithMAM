@@ -189,6 +189,7 @@ button:hover {
     display: block;
     /* margin-left: 45%; */ 
     text-align: center;
+    /* margin-top: 10px; */
 }
 /* Contact Form */
 .contact {
