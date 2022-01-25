@@ -24,6 +24,11 @@ Btn.addEventListener("click", ()=>{
     else if (inputVal == "myzoom"){
         window.location.href = "https://us02web.zoom.us/j/81656685183?pwd=MC9ETUxjeHNxK2lSWUJkTU43OFFnZz09";        
     }
+    else if (inputVal != ""){
+        const Linker = document.querySelector("#linker");
+        Linker.innerText = "Link";
+        Linker.setAttribute("href",inputVal);
+    }
     else{
         msg.innerText = "Sorry not found";
     }
