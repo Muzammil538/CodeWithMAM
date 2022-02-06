@@ -24,3 +24,6 @@ Icon.addEventListener("click", () => {
     }
 });
 
+// Anchor Locations
+let Courses = './Temp/Cr/course.html'
+

@@ -43,6 +43,7 @@ header {
 .logo {
     cursor: pointer;
     text-align: center;
+    font-size: x-large;
 }
 .logo span:nth-child(1){
     color: red;
