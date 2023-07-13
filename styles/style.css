@@ -1,72 +1,467 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;    
-    padding: 0;
-    background-color: var(--primary);
-    font-family: 'Montserrat', sans-serif;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  font-family: "Montserrat", sans-serif;
 }
 :root {
-    --Blue: #0088a9;
-    --Black: #24252A;
-    --White: #edf0f1;
-    --secondary-Blue: rgba(0,136,169,1);
+  --Blue: #0088a9;
+  --Black: #24252a;
+  --White: #edf0f1;
+  --secondary-Blue: rgba(0, 136, 169, 1);
 }
 .theme {
-    --primary: #24252A;
-    --secondary: #edf0f1;
+  --primary: #24252a;
+  --secondary: #edf0f1;
 }
 
-li , a, button {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--secondary);
-    text-decoration: none;
-} 
-
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.container {
+  color: var(--secondary);
+  padding: 20px;
+}
+/* PC Nav  */
 header {
-    padding: 10px 20px;
-    width: 100%;
-    height: 60px;
-    background-color: #f3f3f3;
-    & .navbar-desk{
-        display: flex;
-        align-items: baseline;
-        justify-content: space-evenly;
-        width: 100%;
-        & .brand-container {
-            width: 20%;
-            & .brand-title {
-                text-align: center;
-                & a {
-                    font-size: 22px;
-                }
-            }
-        }
-        & .navbar-links-container{
-            display: flex;
-            justify-content: space-around;
-            width: 60%;
-            align-items: center;
-            & .navbar-links-left , .navbar-links-right{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 40px;
-            }
-        }
-        & .theme-container{
-            width: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            & *{
-                cursor: pointer;
-            }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  height: 60px;
+  width: 100%;
+  & .hamburger {
+    display: none;
+  }
+  & .logo {
+    cursor: pointer;
+    text-align: center;
+    font-size: x-large;
+  }
+  & .logo span:nth-child(1) {
+    color: red;
+  }
+  & .logo span:nth-child(3) {
+    color: #0066ff;
+  }
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    & .nav_links_left,
+    .nav_links_right {
+      list-style: none;
+    }
+    & .nav_links_left li,
+    .nav_links_right li {
+      display: inline-block;
+      padding: 6px 15px;
+    }
+    & .nav_links_left li a,
+    .nav_links_right li a {
+      transition: all 0.3s ease 0s;
+    }
+    & .nav_links_left li a:hover,
+    .nav_links_right li a:hover {
+      color: var(--Blue);
+    }
+    & .high-light {
+      background-color: #0066ff;
+      padding: 8px;
+      border-radius: 8px;
+      color: #edf0f1;
+    }
+    & .high-light:hover {
+      background-color: #0066ffc6 !important;
+      color: #edf0f1 !important;
+    }
+  }
+
+  & #icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--secondary);
+  }
+}
+/* Banner PC */
+.banner {
+  font-family: "Montserrat", sans-serif;
+  /* color: var(--secondary); */
+  padding: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  & .banner-text {
+    & h1,
+    h3 {
+      margin: 5px 0px;
+    }
+    /* & h3 span::before {
+      content: "";
+      animation: TextChange infinite 15s;
+      color: var(--Blue);
+      text-transform: capitalize;
+      font-size: 20px;
+    } */
+  }
+  & .banner-img {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.foot_links {
+  list-style: none;
+}
+.foot_links {
+  margin: 15px 5px;
+  display: inline-flex;
+}
+.foot {
+  display: block;
+  margin: 5px 25px;
+}
+
+.foot_links li {
+  display: block;
+  padding: 5px 10px;
+}
+
+.foot_links li a:hover {
+  color: var(--Blue);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Developer Context  */
+.context {
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  /* background-color: #3333; */
+}
+.container .title {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid var(--Blue);
+}
+.context img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  /* background-color: #333; */
+  margin-left: 50px;
+  box-shadow: 5px 5px #888888;
+}
+.context img:hover {
+  height: 150px;
+  width: 150px;
+  border-radius: 0;
+  transition-delay: 0.3s;
+}
+.profile {
+  margin: 0px 50px;
+  /* background-color: #333; */
+  padding: 10px;
+}
+.links {
+  padding: 10px;
+  justify-content: space-around;
+}
+.links a i {
+  font-size: 25px;
+  margin: 0px 5px;
+  padding: 15px 2px;
+}
+.links a i:hover {
+  color: var(--Blue);
+  font-size: 30px;
+  transition-delay: 0.3s;
+}
+/* Courses  */
+.courses {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.card {
+  text-align: center;
+  border: 0.5px solid var(--secondary-Blue);
+  padding: 5px 10px;
+  border-radius: 15px;
+  width: 220px;
+  height: 220px;
+}
+.card-btn {
+  position: relative;
+  margin-top: 15px;
+}
+
+.course-img {
+  height: 100px;
+  width: 100px;
+}
+.course-long-btn {
+  display: block;
+  /* margin-left: 45%; */
+  text-align: center;
+  /* margin-top: 10px; */
+}
+/* Contact Form */
+.contact {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-around;
+}
+.contact img {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+.contactDetail {
+  display: block;
+  padding: 20px;
+}
+.contactDetail h2,
+.contactDetail h4 {
+  margin: 5px 0px;
+}
+.contactForm {
+  padding: 20px;
+}
+.formItem {
+  margin: 10px auto;
+}
+
+.contactForm input,
+.formItem textarea {
+  border-radius: 10px;
+  font-size: 20px;
+  border: 1px solid var(--Blue);
+  margin-top: 5px;
+  padding: 5px 10px;
+  width: 100%;
+}
+/* animation */
+@keyframes TextChange {
+  0% {
+    content: "Web Developer";
+  }
+  20% {
+    content: "Web Designer";
+  }
+  40% {
+    content: "Data Scientist";
+  }
+  60% {
+    content: "Backend Developer";
+  }
+  80% {
+    content: "DataBase Manager";
+  }
+  100% {
+    content: "Successful";
+  }
+}
+/* Mobile Design*/
+@media screen and (max-width: 768px) {
+  /* Navigation  */
+  header {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 10%;
+    text-align: center;
+    & #menu {
+        font-size: 20px;
+        display: block;
+        color: var(--Blue);
+        margin: 3px 1px;
+    }
+    & .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: 1.5%;
+        left: 3%;
+      }
+    span #icon {
+        cursor: pointer;
+        font-size: 20px;
+        color: var(--secondary);
+        display: block;
+        position: absolute;
+        top: 1.5%;
+        right: 3%;
+      }
+    & .nav_links {
+        list-style: none;
+        display: none;
+    }
+    & .nav_links.active {
+        display: initial;
+        transition-delay: 0.9s;
+        & .nav_links li a {
+          transition: all 0.3s ease 0s;
         }
     }
-}
+  }
+  
+  .foot_links {
+    display: initial;
+    margin: 0px auto;
+  }
+  
+  .nav_links li {
+    display: block;
+    padding: 20px 0px;
+  }
+  .foot_links li {
+    display: block;
+    padding: 10px 0px;
+  }
+  .nav_links li a,
+  .foot_links li a {
+    transition: all 0.3s ease 0s;
+  }
+  .foot {
+    display: flex;
+    overflow-x: hidden;
+  }
+  button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  
+  
+  /* Banner */
+  .banner {
+    padding: 40px;
+  }
+  /* Uni-Conatiner */
+  .container {
+    color: var(--secondary);
+    padding: 15px;
+  }
+  /* Developer Context */
+  .container .title {
+    text-align: center;
+    padding: 2.5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid var(--Blue);
+  }
+  .context {
+    display: block;
+    padding: 5px;
+    /* text-align: center; */
+    /* background-color: #3333; */
+  }
+  .context img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* background-color: #333; */
+    margin: 0px auto;
+    box-shadow: 5px 5px #888888;
+    position: relative;
+    justify-content: center;
+  }
+  .profile {
+    margin: 0px 50px;
+    /* background-color: #333; */
+    padding: 5px;
+  }
+  .links {
+    padding: 5px;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .links a i {
+    font-size: 25px;
+    margin: 0px 5px;
+    padding: 15px 2px;
+  }
+  /* Courses */
+  .courses {
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .card {
+    margin: 15px auto;
+    width: 270px;
+  }
+  .card .card-btn {
+    margin-top: 5px;
+  }
+  /* Contact form  */
+  .contact {
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .contact img {
+    margin: 0px auto;
+    text-align: center;
+  }
+  .contactDetail {
+    display: block;
+    padding: 5px;
+    text-align: left;
+  }
+  .contactDetail h2,
+  .contactDetail h4 {
+    margin: 5px 0px;
+  }
+  .contactForm {
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .formItem {
+    margin: 10px auto;
+  }
 
+  .contactForm input,
+  .formItem textarea {
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid var(--Blue);
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+}

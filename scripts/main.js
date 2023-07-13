@@ -1,28 +1,31 @@
-const Nav = document.querySelector(".nav_links");
+const Nav = document.querySelector(".navbar-bottom");
 const HamBurger = document.querySelector(".hamburger");
 HamBurger.addEventListener("click" , () => {
     Nav.classList.toggle("active");
-    let Icon = document.getElementById("menu");
+    let Icon = HamBurger;
     if(Nav.classList.contains("active")){
-        Icon.classList.remove("fa-bars");
-        Icon.classList.add("fa-times");   
+        Icon.classList.remove("bi-list");
+        Icon.classList.add("bi-x-lg");   
     }else{
-        Icon.classList.remove("fa-times");
-        Icon.classList.add("fa-bars");
+        Icon.classList.remove("bi-x-lg");
+        Icon.classList.add("bi-list");
     }
 });
 // Change the Theme 
-const Icon = document.getElementById("icon");
+const Icon = document.querySelector("#icon");
+
 Icon.addEventListener("click", () => {
     document.body.classList.toggle("theme");    
     if(document.body.classList.contains("theme")){
-        Icon.classList.remove("fa-moon");
-        Icon.classList.add("fa-sun");   
+        Icon.classList.remove("bi-moon-fill");
+        Icon.classList.add("bi-sun-fill");   
     }else{
-        Icon.classList.remove("fa-sun");
-        Icon.classList.add("fa-moon");
+        Icon.classList.remove("bi-sun-fill");
+        Icon.classList.add("bi-moon-fill");
     }
 });
+    
+
 
 // Email JS 
 function sendContMail(params){

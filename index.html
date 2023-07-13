@@ -14,37 +14,190 @@
     <!-- Personal Styles  -->
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
 
   <body>
+    <!-- NavBar  -->
     <header>
-      <nav class="navbar-desk">
-        <div class="brand-container">
-          <h1 class="brand-title">
-            <a href="#">Muzammil</a>
-          </h1>
-        </div>
-        <div class="navbar-links-container">
-          <div class="navbar-links-left">
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Projects</a>
-            <a href="#" class="nav-link">Contact</a>
-          </div>
-          <div class="navbar-links-right">
-            <a href="#" class="nav-link">Portfolio</a>
-            <a href="#" class="nav-link">Hire Me!</a>
-          </div>
-        </div>
-        <div class="theme-container">
-          <i class="bi bi-moon"></i>
-        </div>
+      <div class="hamburger">
+        <i class="bi bi-list" id="menu"></i>
+      </div>
+      <a href="./index.html" class="logo"
+        ><span>Mu</span><span>zam</span><span>mil</span>
+      </a>
+      <nav class="nav_links">
+        <ul class="nav_links_left">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <!-- <li><a href="./Temp/Nav/about/about.html">About</a></li> -->
+          <li><a href="#">Contact</a></li>
+          <!-- <a href="#" class="cta"><button>Sign</button></a> -->
+        </ul>
+        <ul class="nav_links_right">
+          <li><a href="#">Services</a></li>
+          <li><a href="#" class="high-light">Hire Me!</a></li>
+        </ul>
       </nav>
-      <nav class="navbar-mobile"></nav>
+      <span>
+        <i class="bi bi-moon-fill" id="icon"></i>
+      </span>
     </header>
+
+    <!-- Banner -->
+    <section class="container">
+      <div class="banner">
+        <div class="banner-text">
+          <h1>Hello! I am Muzammil</h1>
+          <!-- <h3>You Can Become a <br /><span></span></h3> -->
+          <h3 id="banner-text-change"></h3>
+        </div>
+        <div class="banner-img"></div>
+      </div>
+    </section>
+    <!-- Courses are here  -->
+    <section class="container">
+      <h1 class="title">Courses</h1>
+      <div class="courses">
+        <div class="card">
+          <img src="./Images/html.png" class="course-img" />
+          <h2 class="card-title">HTML</h2>
+          <div class="course-lang">
+            <span>HTML</span>
+          </div>
+          <a href="./Temp/Cr/course-html.html"
+            ><button class="card-btn">See More</button></a
+          >
+        </div>
+        <div class="card">
+          <img src="./Images/images.png" class="course-img" />
+          <h2 class="card-title">Web Dev</h2>
+          <div class="course-lang">
+            <span>HTML & CSS & More</span>
+          </div>
+          <a href="./Temp/Cr/course-web.html"
+            ><button class="card-btn">See More</button></a
+          >
+        </div>
+        <div class="card">
+          <img src="./Images/python.png" class="course-img" />
+          <h2 class="card-title">Python</h2>
+          <div class="course-lang">
+            <span>Python</span>
+          </div>
+          <a href="./Temp/Cr/course-py.html"
+            ><button class="card-btn">See More</button></a
+          >
+        </div>
+      </div>
+      <div class="course-long-btn">
+        <a href="./Temp/Cr/course.html"><button>See More</button></a>
+      </div>
+    </section>
+    <!-- Services are here  -->
+    <section class="container">
+      <h1 class="title">Services</h1>
+      <div class="courses">
+        <div class="card">
+          <img src="./Images/chatbot.png" class="course-img" />
+          <h2 class="card-title">Code Editor</h2>
+          <a href="./Temp/CodeEditor/codeEditor.html" target="_blank"
+            ><button class="card-btn">See More</button></a
+          >
+        </div>
+        <div class="card">
+          <img src="./Images/chatbot.png" class="course-img" />
+          <h2 class="card-title">Music Player</h2>
+          <a href="https://muzammil538.github.io/Music-Player/" target="_blank"
+            ><button class="card-btn">See More</button></a
+          >
+        </div>
+        <div class="card">
+          <img src="./Images/chatbot.png" class="course-img" />
+          <h2 class="card-title">Search Engine</h2>
+          <a href="https://muzammil538.github.io/wikiSearchWeb/" target="_blank"
+            ><button class="card-btn">See More</button></a
+          >
+        </div>
+      </div>
+      <div class="course-long-btn">
+        <a href="./Temp/Nav/serv/service.html"><button>See More</button></a>
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="container">
+      <h1 class="title">Contact Form</h1>
+      <div class="contact">
+        <img src="./Images/deve-pic.png" alt="" />
+
+        <div class="contactDetail">
+          <h2><i class="far fa-envelope"></i> Email :</h2>
+          <h4>mamuzammil884@gmail.com</h4>
+          <h2><i class="fas fa-phone-alt"></i> Phone :</h2>
+          <h4>+91 123456789</h4>
+          <div class="links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/the2021mam/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="mailto:muzammilmohd538@gmail.com?subject = Feedback&body = Message"
+              ><i class="far fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Developer Context -->
+    <section class="container">
+      <h1 class="title">Developer</h1>
+      <div class="context">
+        <img src="./Images/deve-pic.png" alt="" />
+        <div class="profile">
+          <h1>M A M</h1>
+          <h4>Soft Developer</h4>
+          <p>
+            I am the Developer and the C.E.O of CodeWithMAM. <br />
+            This is the platform where you can coding for the least price never
+            expected.
+            <a href="./Temp/Cr/course.html"
+              ><button class="card-btn">Start Learning</button></a
+            >
+          </p>
+          <div class="links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/the2021mam/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <p class="title"></p>
+    </section>
+    <!-- Courses -->
+    <!-- Footer  -->
+    <section class="container">
+      <div class="foot">
+        <ul class="foot_links">
+          <li><a href="./Temp/Cr/course.html">Courses</a></li>
+          <li><a href="./Temp/Nav/serv/service.html#services">Services</a></li>
+          <li><a href="./Temp/Nav/about/about.html">About</a></li>
+          <li><a href="./Temp/Nav/cont/contact.html">Contact</a></li>
+        </ul>
+        <ul class="foot_links">
+          <li><a href="./Temp/Nav/serv/service.html#games">Games</a></li>
+          <li>
+            <a href="https://chapcwmam.000webhostapp.com/">Chat with Us</a>
+          </li>
+          <!--  <li><a href="./Temp/Nav/about/about.html"></a></li> -->
+          <li><a href="./Temp/Nav/Account/acc.html">Account</a></li>
+        </ul>
+      </div>
+    </section>
     <!-- Personal Script  -->
     <script src="./scripts/main.js"></script>
   </body>
 </html>
-<!-- cols="26" rows="5" -->
